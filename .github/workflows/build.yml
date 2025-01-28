@@ -4,10 +4,10 @@ name: Flutter
 on:
   # Runs this action when you push on master
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   # Runs this when a PR against master is created
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   flutter_job:
@@ -32,11 +32,19 @@ jobs:
       # Fetches proj dependencies from pub
       - name: Install dependencies
         run: flutter pub get
+<<<<<<< HEAD
         # ^ If you want to use a specific version of flutter
       
       # Verifies if the dart code is formatted well
       - name: Verify formatting
         run: dart format --output=none 
+=======
+          # ^ If you want to use a specific version of flutter
+
+           # Verifies if the dart code is formatted well
+      - name: Verify formatting
+        run: dart format --output=none 
+>>>>>>> b2dd699c28a3a53bd42a16bce6f0f1f3f7c9bd4d
         # --set-exit-if-changed stops execution if the any code is not well formatted
         # --output=none prints files which needs to be formatted
       
@@ -47,4 +55,8 @@ jobs:
 
       # Runs unit test
       - name: Run tests
+<<<<<<< HEAD
         run: flutter test
+=======
+        run: flutter test
+>>>>>>> b2dd699c28a3a53bd42a16bce6f0f1f3f7c9bd4d
