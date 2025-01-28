@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class Page1 extends StatelessWidget {
@@ -39,10 +40,10 @@ class Page1 extends StatelessWidget {
               _buildHorizontalListView(
                 context,
                 items: [
-                  _FoodItem('assets/images/ก๋วยเตี๋ยว.jpg', 'ก๋วยเตี๋ยว', '/Page2'),
-                  _FoodItem('assets/images/ผัดกระเพรา.jpg', 'ผัดกระเพรา', '/Page3'),
-                  _FoodItem('assets/images/ไข่ลูกเขย.jpg', 'ไข่ลูกเขย', '/Page4'),
-                  _FoodItem('assets/images/หมูกระทะ.jpg', 'หมูกระทะ', '/Page5'),
+                  const _FoodItem('assets/images/ก๋วยเตี๋ยว.jpg', 'ก๋วยเตี๋ยว', '/Page2'),
+                  const _FoodItem('assets/images/ผัดกระเพรา.jpg', 'ผัดกระเพรา', '/Page3'),
+                  const _FoodItem('assets/images/ไข่ลูกเขย.jpg', 'ไข่ลูกเขย', '/Page4'),
+                  const _FoodItem('assets/images/หมูกระทะ.jpg', 'หมูกระทะ', '/Page5'),
                 ],
               ),
               const SizedBox(height: 32),
@@ -51,9 +52,9 @@ class Page1 extends StatelessWidget {
               _buildHorizontalListView(
                 context,
                 items: [
-                  _FoodItem('assets/images/ตะโก้เผือก.jpg', 'ตะโก้เผือก', '/Page6'),
-                  _FoodItem('assets/images/ปอเปี๊ยะทอด.jpg', 'ปอเปี๊ยะทอด', '/Page7'),
-                  _FoodItem('assets/images/เฟรนฟราย.jpg', 'เฟรนฟราย', '/Page8'),
+                  const _FoodItem('assets/images/ตะโก้เผือก.jpg', 'ตะโก้เผือก', '/Page6'),
+                  const _FoodItem('assets/images/ปอเปี๊ยะทอด.jpg', 'ปอเปี๊ยะทอด', '/Page7'),
+                  const _FoodItem('assets/images/เฟรนฟราย.jpg', 'เฟรนฟราย', '/Page8'),
                 ],
               ),
             ],
@@ -103,6 +104,7 @@ class Page1 extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
             BoxShadow(
+              // ignore: deprecated_member_use
               color: Colors.black.withOpacity(0.1),
               blurRadius: 8,
               offset: const Offset(0, 4),
@@ -134,9 +136,9 @@ class Page1 extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            Icon(
+            const Icon(
               Icons.food_bank_outlined , // เพิ่มไอคอนใต้ชื่อรูป
-              color: const Color.fromARGB(255, 3, 128, 65),
+              color: Color.fromARGB(255, 3, 128, 65),
               size: 24,
             ),
           ],
