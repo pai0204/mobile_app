@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -7,6 +8,7 @@ class Page5 extends StatefulWidget {
   final String title;
 
   @override
+  // ignore: library_private_types_in_public_api
   _Page5State createState() => _Page5State();
 }
 
