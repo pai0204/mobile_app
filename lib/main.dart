@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 // นำเข้าไฟล์เพจต่างๆ
-import 'page1.dart';
+import 'Page1.dart';
 import 'Page2.dart';
-import 'page3.dart';
-import 'page4.dart';
-import 'page5.dart';
-import 'page6.dart';
-import 'page7.dart';
-import 'page8.dart';
+import 'Page3.dart';
+import 'Page4.dart';
+import 'Page5.dart';
+import 'Page6.dart';
+import 'Page7.dart';
+import 'Page8.dart';
 
 void main() {
   runApp(const MyApp());
