@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Page4 extends Statef ulWidget {
+class Page4 extends StatefulWidget {
   const Page4({super.key, required this.title});
 
   final String title;
