@@ -63,7 +63,7 @@ class Page1 extends StatelessWidget {
 class Page2 extends StatelessWidget {
   final String title;
 
-  Page2({required this.title});
+  const Page2({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
