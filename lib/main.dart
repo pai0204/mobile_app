@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Page1(title: "หน้าที่ 1"),
-        '/Page2': (context) => Page2(title: "หน้าที่ 2"),
+        '/Page2': (context) => const Page2(title: "หน้าที่ 2"),
       },
     );
   }

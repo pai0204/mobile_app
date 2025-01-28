@@ -1,4 +1,6 @@
 // ignore: file_names
+// ignore_for_file: file_names, duplicate_ignore
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';  // นำเข้า package url_launcher
 
