@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => Page1(title: "หน้าที่ 1"),
+        '/': (context) => const Page1(title: "หน้าที่ 1"),
         '/Page2': (context) => Page2(title: "หน้าที่ 2"),
       },
     );
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
 class Page1 extends StatelessWidget {
   final String title;
 
-  Page1({required this.title});
+  const Page1({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -44,12 +44,12 @@ class Page1 extends StatelessWidget {
               width: 200,  // กำหนดความกว้างของรูปภาพ
               fit: BoxFit.cover, // วิธีการครอบภาพ (จะบีบหรือขยายภาพตามขนาดที่กำหนด)
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/Page2');
               },
-              child: Text("ไปที่หน้าที่ 2"),
+              child: const Text("ไปที่หน้าที่ 2"),
             ),
           ],
         ),
@@ -69,7 +69,7 @@ class Page2 extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Center(
+      body: const Center(
         child: Text('นี่คือหน้าที่ 2'),
       ),
     );
